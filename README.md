@@ -39,19 +39,15 @@ This project creates a scalable, automated analytics pipeline and dashboard to:
 ## 🏗️ End-to-End Architecture & Workflow
 
 ```mermaid
-graph LR
-    A[📄 Raw CSV<br/>~73K rows] -->|Load| B[🐍 Python ETL<br/>Pipeline]
-    B -->|Insert| C[🗄️ MySQL<br/>Database]
-    C -->|Connect| D[📊 Power BI<br/>Dashboard]
+flowchart LR
+    A[Raw CSV<br/>~73K rows] --> B[Python ETL<br/>Pipeline]
+    B --> C[MySQL<br/>Database]
+    C --> D[Power BI<br/>Dashboard]
     
-    B -.->|Data Cleaning<br/>Feature Engineering| B
-    C -.->|Risk Metrics<br/>Calculation| C
-    D -.->|Interactive<br/>Visualizations| D
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style B fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
 ```
 
 ### 1. **Data Ingestion & ETL** 📥
@@ -316,4 +312,5 @@ This project mirrors the daily work of junior/mid-level data analysts in **retai
 For questions, suggestions, or collaboration opportunities, feel free to reach out!
 
 **⭐ If you found this project helpful, please give it a star!**
+
 
