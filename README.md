@@ -50,15 +50,15 @@ flowchart TD
     D --> D1[Interactive Visualizations]
     D --> D2[KPIs & Analytics]
     
-    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style B fill:#fff3e0,stroke:#f57c00,stroke-width:3px
-    style B1 fill:#ffe0b2,stroke:#f57c00,stroke-width:1px
-    style B2 fill:#ffe0b2,stroke:#f57c00,stroke-width:1px
-    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
-    style C1 fill:#e1bee7,stroke:#7b1fa2,stroke-width:1px
-    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:3px
-    style D1 fill:#c8e6c9,stroke:#388e3c,stroke-width:1px
-    style D2 fill:#c8e6c9,stroke:#388e3c,stroke-width:1px
+    style A fill:#bbdefb,stroke:#0d47a1,stroke-width:2px,color:#000
+    style B fill:#ffcc80,stroke:#e65100,stroke-width:3px,color:#000
+    style B1 fill:#ffb74d,stroke:#e65100,stroke-width:1px,color:#000
+    style B2 fill:#ffb74d,stroke:#e65100,stroke-width:1px,color:#000
+    style C fill:#ce93d8,stroke:#4a148c,stroke-width:3px,color:#000
+    style C1 fill:#ba68c8,stroke:#4a148c,stroke-width:1px,color:#000
+    style D fill:#a5d6a7,stroke:#1b5e20,stroke-width:3px,color:#000
+    style D1 fill:#81c784,stroke:#1b5e20,stroke-width:1px,color:#000
+    style D2 fill:#81c784,stroke:#1b5e20,stroke-width:1px,color:#000
 ```
 
 ### 1. **Data Ingestion & ETL** 📥
@@ -323,6 +323,7 @@ This project mirrors the daily work of junior/mid-level data analysts in **retai
 For questions, suggestions, or collaboration opportunities, feel free to reach out!
 
 **⭐ If you found this project helpful, please give it a star!**
+
 
 
 
