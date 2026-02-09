@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-orange.svg)](https://www.mysql.com/)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow.svg)](https://powerbi.microsoft.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Project Type**: End-to-End Data Analytics / Business Intelligence  
 **Tech Stack**: Python (pandas, mysql-connector-python), MySQL, Power BI Desktop  
@@ -323,6 +322,7 @@ This project mirrors the daily work of junior/mid-level data analysts in **retai
 For questions, suggestions, or collaboration opportunities, feel free to reach out!
 
 **⭐ If you found this project helpful, please give it a star!**
+
 
 
 
