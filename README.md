@@ -38,15 +38,20 @@ This project creates a scalable, automated analytics pipeline and dashboard to:
 
 ## 🏗️ End-to-End Architecture & Workflow
 
-```
-┌─────────────┐      ┌──────────────┐      ┌─────────────┐      ┌──────────────┐
-│   Raw CSV   │──────▶│  Python ETL  │──────▶│    MySQL    │──────▶│   Power BI   │
-│  (~73K rows)│      │  Pipeline    │      │  Database   │      │  Dashboard   │
-└─────────────┘      └──────────────┘      └─────────────┘      └──────────────┘
-                           │                      │                     │
-                           ▼                      ▼                     ▼
-                     Data Cleaning          Risk Metrics         Interactive
-                     Feature Eng.           Calculation          Visualizations
+```mermaid
+graph LR
+    A[📄 Raw CSV<br/>~73K rows] -->|Load| B[🐍 Python ETL<br/>Pipeline]
+    B -->|Insert| C[🗄️ MySQL<br/>Database]
+    C -->|Connect| D[📊 Power BI<br/>Dashboard]
+    
+    B -.->|Data Cleaning<br/>Feature Engineering| B
+    C -.->|Risk Metrics<br/>Calculation| C
+    D -.->|Interactive<br/>Visualizations| D
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#ffe1f5
+    style D fill:#e1ffe1
 ```
 
 ### 1. **Data Ingestion & ETL** 📥
@@ -298,22 +303,6 @@ This project mirrors the daily work of junior/mid-level data analysts in **retai
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**Your Name**
-
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Portfolio: [yourwebsite.com](https://yourwebsite.com)
-
----
-
 ## 🙏 Acknowledgments
 
 - Dataset: [Kaggle Retail Store Inventory Forecasting Dataset](https://www.kaggle.com/)
@@ -327,3 +316,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions, suggestions, or collaboration opportunities, feel free to reach out!
 
 **⭐ If you found this project helpful, please give it a star!**
+
